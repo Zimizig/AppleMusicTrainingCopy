@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C497CC62A7EA2B1006CC29D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */; };
 		2CAB8FD32A7AA1C3000A4A5B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB8FD22A7AA1C3000A4A5B /* SearchViewController.swift */; };
 		2CCD95EF2A79E88E00333FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD95EE2A79E88E00333FE8 /* AppDelegate.swift */; };
 		2CCD95F12A79E88E00333FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD95F02A79E88E00333FE8 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		2CAB8FD22A7AA1C3000A4A5B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2CCD95EB2A79E88E00333FE8 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCD95EE2A79E88E00333FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				2CCD95EE2A79E88E00333FE8 /* AppDelegate.swift */,
 				2CCD95F02A79E88E00333FE8 /* SceneDelegate.swift */,
 				2CCD96022A79E8C800333FE8 /* MainTabBarController.swift */,
+				2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */,
 				2CCD95F22A79E88E00333FE8 /* ViewController.swift */,
 				2CAB8FD22A7AA1C3000A4A5B /* SearchViewController.swift */,
 				2CCD95F72A79E88F00333FE8 /* Assets.xcassets */,
@@ -91,7 +94,6 @@
 				BBFC8AE84D0088F5856780D6 /* Pods-iMusic.debug.xcconfig */,
 				5FBD20870A8E08C2EFD9C2F3 /* Pods-iMusic.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,6 +213,7 @@
 			files = (
 				2CAB8FD32A7AA1C3000A4A5B /* SearchViewController.swift in Sources */,
 				2CCD95F32A79E88E00333FE8 /* ViewController.swift in Sources */,
+				2C497CC62A7EA2B1006CC29D /* SearchResponse.swift in Sources */,
 				2CCD95EF2A79E88E00333FE8 /* AppDelegate.swift in Sources */,
 				2CCD96032A79E8C800333FE8 /* MainTabBarController.swift in Sources */,
 				2CCD95F12A79E88E00333FE8 /* SceneDelegate.swift in Sources */,

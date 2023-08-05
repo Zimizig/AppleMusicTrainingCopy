@@ -12,10 +12,6 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
-        
         let searchVC = SearchViewController()
         let libraryVC = ViewController()
         

@@ -14,26 +14,9 @@ struct TrackModel {
 }
 
 class SearchViewController: UITableViewController {
-    
+    private var timer: Timer?
     let searchController = UISearchController(searchResultsController: nil)
-    let trackList = [
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                  TrackModel(trackName: "First track", artistName: "Noname1"),
-                ]
+    var trackList = [Track]()
     
     
     override func viewDidLoad() {
@@ -74,15 +57,33 @@ class SearchViewController: UITableViewController {
 extension SearchViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        let url = "https://itunes.apple.com/search?term=\(searchText)"
-        AF.request(url).responseData { dataResponse in
-            if let error = dataResponse.error {
-                print("Error received requesting data: \(error.localizedDescription)")
-                return
+        
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: { _ in
+            
+            let url = "https://itunes.apple.com/search"
+            let parametrs = [
+                              "term": "\(searchText)",
+                             "limit": "10"
+                            ]
+            AF.request(url,method: .get,parameters: parametrs,encoding: URLEncoding.default, headers: nil).responseData { dataResponse in
+                
+                if let error = dataResponse.error {
+                    print("Error received requesting data: \(error.localizedDescription)")
+                    return
+                }
+                guard let data = dataResponse.data else { return }
+                
+                let decoder = JSONDecoder()
+                do {
+                    let objects = try decoder.decode(SearchResponse.self, from: data)
+                    print("objects: ", objects)
+                    self.trackList = objects.results
+                    self.tableView.reloadData()
+                } catch let jsonError {
+                    print("Failed to decode JSON: \(jsonError)")
+                }
             }
-            guard let data = dataResponse.data else { return }
-            let someString = String(data: data, encoding: .utf8)
-            print(someString ?? "")
-        }
+        })
     }
 }
