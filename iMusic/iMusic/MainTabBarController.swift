@@ -12,7 +12,7 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let searchVC = SearchViewController()
+        let searchVC = SearchMusicViewController()
         let libraryVC = ViewController()
         
         viewControllers = [
