@@ -12,20 +12,24 @@
 
 import UIKit
 
-enum Search
-{
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
-    {
+enum Search {
+    
+    enum Model {
+        struct Request {
+            enum RequestType {
+                case some
+            }
+        }
+        struct Responce {
+            enum ResponceType {
+                case some
+            }
+        }
+        struct ViewModel {
+            enum ViewModelData {
+                case some
+            }
+        }
     }
-    struct Response
-    {
-    }
-    struct ViewModel
-    {
-    }
-  }
+    
 }
