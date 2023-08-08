@@ -11,39 +11,36 @@
         <!--Search View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SearchViewController" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="SearchViewController" customModule="iMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VaP-qL-egx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UxI-jf-p5Q">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="393" id="Y69-2M-ahg"/>
-                                    <constraint firstAttribute="height" constant="818" id="g6c-j7-aiG"/>
-                                </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="mMU-zn-Xj2"/>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Rlw-hV-94s"/>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="dhh-yb-DOd"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Bgl-Ib-w4a"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VaP-qL-egx" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="P3P-G1-Hc7"/>
-                            <constraint firstItem="VaP-qL-egx" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="aaQ-7k-qum"/>
-                            <constraint firstItem="VaP-qL-egx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="afM-8U-RBg"/>
+                            <constraint firstItem="UxI-jf-p5Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2VT-6d-2nw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UxI-jf-p5Q" secondAttribute="trailing" id="KZ4-dG-ZQ9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="UxI-jf-p5Q" secondAttribute="bottom" id="yOk-F9-3To"/>
+                            <constraint firstItem="UxI-jf-p5Q" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="z3K-Li-5EJ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="table" destination="VaP-qL-egx" id="u7p-3A-gED"/>
+                        <outlet property="table" destination="UxI-jf-p5Q" id="ez5-66-AFc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1141" y="21"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
