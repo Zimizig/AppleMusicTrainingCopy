@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C287DD32A83044C0064F70E /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C287DD22A83044C0064F70E /* TrackCell.xib */; };
+		2C287DD52A83048E0064F70E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C287DD42A83048E0064F70E /* TrackCell.swift */; };
 		2C3103822A7FCAF2004A5936 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3103812A7FCAF2004A5936 /* NetworkService.swift */; };
 		2C497CC62A7EA2B1006CC29D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */; };
 		2CA735AB2A8142AE0027ABAE /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA735A52A8142AE0027ABAE /* SearchPresenter.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C287DD22A83044C0064F70E /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
+		2C287DD42A83048E0064F70E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		2C3103812A7FCAF2004A5936 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		2CA735A52A8142AE0027ABAE /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
@@ -64,9 +68,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C287DD12A8303FD0064F70E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C287DD22A83044C0064F70E /* TrackCell.xib */,
+				2C287DD42A83048E0064F70E /* TrackCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2C287DD72A832A0B0064F70E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2CA735A22A81416C0027ABAE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2C287DD72A832A0B0064F70E /* Models */,
 				2C3103812A7FCAF2004A5936 /* NetworkService.swift */,
 			);
 			path = Services;
@@ -75,6 +97,7 @@
 		2CA735A42A8142810027ABAE /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				2C287DD12A8303FD0064F70E /* Cell */,
 				2CFD17C22A8200490022254F /* SearchViewController.storyboard */,
 				2CA735A92A8142AE0027ABAE /* SearchViewController.swift */,
 				2CA735A52A8142AE0027ABAE /* SearchPresenter.swift */,
@@ -109,12 +132,11 @@
 			children = (
 				2CCD95EE2A79E88E00333FE8 /* AppDelegate.swift */,
 				2CCD95F02A79E88E00333FE8 /* SceneDelegate.swift */,
-				2CA735A22A81416C0027ABAE /* Services */,
 				2CCD96022A79E8C800333FE8 /* MainTabBarController.swift */,
+				2CA735A22A81416C0027ABAE /* Services */,
 				2CA735A42A8142810027ABAE /* Search */,
 				2CAB8FD22A7AA1C3000A4A5B /* SearchMusicViewController.swift */,
 				2CCD95F22A79E88E00333FE8 /* ViewController.swift */,
-				2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */,
 				2CFD17C62A8205DF0022254F /* Helpers */,
 				2CCD95F72A79E88F00333FE8 /* Assets.xcassets */,
 				2CCD95F92A79E88F00333FE8 /* LaunchScreen.storyboard */,
@@ -211,6 +233,7 @@
 				2CCD95FB2A79E88F00333FE8 /* LaunchScreen.storyboard in Resources */,
 				2CCD95F82A79E88F00333FE8 /* Assets.xcassets in Resources */,
 				2CFD17C32A8200490022254F /* SearchViewController.storyboard in Resources */,
+				2C287DD32A83044C0064F70E /* TrackCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +291,7 @@
 				2CCD95F32A79E88E00333FE8 /* ViewController.swift in Sources */,
 				2C497CC62A7EA2B1006CC29D /* SearchResponse.swift in Sources */,
 				2CA735B02A8142AE0027ABAE /* SearchInteractor.swift in Sources */,
+				2C287DD52A83048E0064F70E /* TrackCell.swift in Sources */,
 				2CCD95EF2A79E88E00333FE8 /* AppDelegate.swift in Sources */,
 				2CCD96032A79E8C800333FE8 /* MainTabBarController.swift in Sources */,
 				2CA735AC2A8142AE0027ABAE /* SearchWorker.swift in Sources */,
