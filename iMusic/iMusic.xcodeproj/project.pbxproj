@@ -12,6 +12,8 @@
 		2C3103822A7FCAF2004A5936 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3103812A7FCAF2004A5936 /* NetworkService.swift */; };
 		2C497CC62A7EA2B1006CC29D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */; };
 		2C997EFD2A8823050050D111 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C997EFC2A8823050050D111 /* FooterView.swift */; };
+		2C997F002A884E920050D111 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C997EFF2A884E920050D111 /* TrackDetailView.xib */; };
+		2C997F022A884EE40050D111 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C997F012A884EE40050D111 /* TrackDetailView.swift */; };
 		2CA735AB2A8142AE0027ABAE /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA735A52A8142AE0027ABAE /* SearchPresenter.swift */; };
 		2CA735AC2A8142AE0027ABAE /* SearchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA735A62A8142AE0027ABAE /* SearchWorker.swift */; };
 		2CA735AD2A8142AE0027ABAE /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA735A72A8142AE0027ABAE /* SearchRouter.swift */; };
@@ -36,6 +38,8 @@
 		2C3103812A7FCAF2004A5936 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		2C997EFC2A8823050050D111 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		2C997EFF2A884E920050D111 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
+		2C997F012A884EE40050D111 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		2CA735A52A8142AE0027ABAE /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		2CA735A62A8142AE0027ABAE /* SearchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWorker.swift; sourceTree = "<group>"; };
 		2CA735A72A8142AE0027ABAE /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 			path = FooterView;
 			sourceTree = "<group>";
 		};
+		2C997EFE2A884E530050D111 /* TrackDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				2C997EFF2A884E920050D111 /* TrackDetailView.xib */,
+				2C997F012A884EE40050D111 /* TrackDetailView.swift */,
+			);
+			path = TrackDetailView;
+			sourceTree = "<group>";
+		};
 		2CA735A22A81416C0027ABAE /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 		2CA735A42A8142810027ABAE /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				2C997EFE2A884E530050D111 /* TrackDetailView */,
 				2C997EFB2A8822C80050D111 /* FooterView */,
 				2C287DD12A8303FD0064F70E /* Cell */,
 				2CFD17C22A8200490022254F /* SearchViewController.storyboard */,
@@ -245,6 +259,7 @@
 				2CCD95F82A79E88F00333FE8 /* Assets.xcassets in Resources */,
 				2CFD17C32A8200490022254F /* SearchViewController.storyboard in Resources */,
 				2C287DD32A83044C0064F70E /* TrackCell.xib in Resources */,
+				2C997F002A884E920050D111 /* TrackDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +327,7 @@
 				2CA735AE2A8142AE0027ABAE /* SearchModels.swift in Sources */,
 				2CCD95F12A79E88E00333FE8 /* SceneDelegate.swift in Sources */,
 				2CA735AB2A8142AE0027ABAE /* SearchPresenter.swift in Sources */,
+				2C997F022A884EE40050D111 /* TrackDetailView.swift in Sources */,
 				2C3103822A7FCAF2004A5936 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
