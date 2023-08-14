@@ -9,7 +9,7 @@ import UIKit
 import SDWebImage
 import AVKit
 
-protocol TrackMovingDelegate: class {
+protocol TrackMovingDelegate: AnyObject {
     func moveBackForPreviousTrack() -> SearchViewModel.Cell?
     func moveForwardForPreviousTrack() -> SearchViewModel.Cell?
 }
@@ -31,6 +31,7 @@ class TrackDetailView: UIView {
     }()
     
     weak var delegate: TrackMovingDelegate?
+    weak var tabBarDelegate: MainTabBarControllerDelegate?
     
     // MARK: - awakeFromNib
     
@@ -118,7 +119,9 @@ class TrackDetailView: UIView {
     // MARK: - @IBActions
     
     @IBAction func dragDownButtonTapped(_ sender: Any) {
-        self.removeFromSuperview()
+        
+        self.tabBarDelegate?.minimizeTrackDetailController()
+        //self.removeFromSuperview()
     }
     
     @IBAction func hundleCurrentTimeSlider(_ sender: Any) {

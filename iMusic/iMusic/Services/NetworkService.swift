@@ -17,7 +17,7 @@ class NetworkService {
                          "limit": "100",
                           "media": "music"
                         ]
-        AF.request(url,method: .get,parameters: parametrs,encoding: URLEncoding.default, headers: nil).responseData { dataResponse in
+        AF.request(url,method: .get, parameters: parametrs, encoding: URLEncoding.default, headers: nil).responseData { dataResponse in
             
             if let error = dataResponse.error {
                 print("Error received requesting data: \(error.localizedDescription)")
