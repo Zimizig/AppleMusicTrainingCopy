@@ -29,7 +29,6 @@ class NetworkService {
             let decoder = JSONDecoder()
             do {
                 let objects = try decoder.decode(SearchResponse.self, from: data)
-                print("objects: ", objects)
                 competion(objects)
                 
                 
