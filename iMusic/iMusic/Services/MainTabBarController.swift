@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 protocol MainTabBarControllerDelegate: AnyObject {
     func minimizeTrackDetailController()
@@ -23,15 +24,16 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let libraryVC = ViewController()
-        
         setupTrackDetailView()
         
         searchViewController.tabBarDelegate = self
         
+        let libraryVC = Library()
+        let hostVC = UIHostingController(rootView: libraryVC)
+        
         viewControllers = [
-            generateViewController(rootViewController: searchViewController, image: UIImage(systemName: "magnifyingglass")!, title: "Поиск"),
-            generateViewController(rootViewController: libraryVC, image: UIImage(systemName: "book")!, title: "Медиатека")
+            hostVC,
+            generateViewController(rootViewController: searchViewController, image: UIImage(systemName: "magnifyingglass")!, title: "Поиск")
         ]
         
         func generateViewController(rootViewController: UIViewController, image: UIImage, title: String) -> UIViewController {
@@ -78,8 +80,8 @@ extension MainTabBarController: MainTabBarControllerDelegate {
         
     func maximizeTrackDetailController(viewModel: SearchViewModel.Cell?) {
         
-        maximizedTopAnhorConstraint.isActive = true
         minimizedTopAnhorConstraint.isActive = false
+        maximizedTopAnhorConstraint.isActive = true
         maximizedTopAnhorConstraint.constant = 0
         bottomAnhorConstraint.constant = 0
         
@@ -91,6 +93,8 @@ extension MainTabBarController: MainTabBarControllerDelegate {
                        animations: {
                                      self.view.layoutIfNeeded()
                                      self.tabBar.alpha = 0
+                                     self.trackDetailView.miniTrackView.alpha = 0
+                                     self.trackDetailView.maxizedStackView.alpha = 1
                                    },
                        completion:nil)
         
@@ -112,6 +116,8 @@ extension MainTabBarController: MainTabBarControllerDelegate {
                        animations: {
                                      self.view.layoutIfNeeded()
                                      self.tabBar.alpha = 1
+                                     self.trackDetailView.miniTrackView.alpha = 1
+                                     self.trackDetailView.maxizedStackView.alpha = 0
                                    },
                        completion:nil)
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C17727A2A8EFD48003F44AC /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1772792A8EFD48003F44AC /* Library.swift */; };
 		2C287DD32A83044C0064F70E /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C287DD22A83044C0064F70E /* TrackCell.xib */; };
 		2C287DD52A83048E0064F70E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C287DD42A83048E0064F70E /* TrackCell.swift */; };
 		2C3103822A7FCAF2004A5936 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3103812A7FCAF2004A5936 /* NetworkService.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1772792A8EFD48003F44AC /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		2C287DD22A83044C0064F70E /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
 		2C287DD42A83048E0064F70E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		2C3103812A7FCAF2004A5936 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -117,6 +119,8 @@
 			children = (
 				2C287DD72A832A0B0064F70E /* Models */,
 				2C3103812A7FCAF2004A5936 /* NetworkService.swift */,
+				2CCD96022A79E8C800333FE8 /* MainTabBarController.swift */,
+				2C1772792A8EFD48003F44AC /* Library.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,7 +165,6 @@
 			children = (
 				2CCD95EE2A79E88E00333FE8 /* AppDelegate.swift */,
 				2CCD95F02A79E88E00333FE8 /* SceneDelegate.swift */,
-				2CCD96022A79E8C800333FE8 /* MainTabBarController.swift */,
 				2CA735A22A81416C0027ABAE /* Services */,
 				2CA735A42A8142810027ABAE /* Search */,
 				2CAB8FD22A7AA1C3000A4A5B /* SearchMusicViewController.swift */,
@@ -335,6 +338,7 @@
 				2CA735AE2A8142AE0027ABAE /* SearchModels.swift in Sources */,
 				2CCD95F12A79E88E00333FE8 /* SceneDelegate.swift in Sources */,
 				2CA735AB2A8142AE0027ABAE /* SearchPresenter.swift in Sources */,
+				2C17727A2A8EFD48003F44AC /* Library.swift in Sources */,
 				2C997F022A884EE40050D111 /* TrackDetailView.swift in Sources */,
 				2C3103822A7FCAF2004A5936 /* NetworkService.swift in Sources */,
 			);
