@@ -32,7 +32,7 @@ class MainTabBarController: UITabBarController {
         let hostVC = UIHostingController(rootView: libraryVC)
         
         viewControllers = [
-            hostVC,
+            generateViewController(rootViewController: hostVC, image: UIImage(systemName: "music.note.list")!, title: "Медиатека"),
             generateViewController(rootViewController: searchViewController, image: UIImage(systemName: "magnifyingglass")!, title: "Поиск")
         ]
         

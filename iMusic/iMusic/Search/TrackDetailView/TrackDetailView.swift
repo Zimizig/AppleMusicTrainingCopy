@@ -25,10 +25,6 @@ class TrackDetailView: UIView {
     @IBOutlet weak var miniTrackImageView: UIImageView!
     @IBOutlet weak var miniTrackTitleLabel: UILabel!
     
-    
-    
-    
-    
     @IBOutlet weak var trackImageView: UIImageView!
     @IBOutlet weak var currentTimeSlider: UISlider!
     @IBOutlet weak var currentTimeLabel: UILabel!
@@ -37,6 +33,8 @@ class TrackDetailView: UIView {
     @IBOutlet weak var autorTitleLabel: UILabel!
     @IBOutlet weak var playPauseButton: UIButton!
     @IBOutlet weak var volumeSlider: UISlider!
+    
+
     
     let player: AVPlayer = {
         let avPlayer = AVPlayer()
@@ -72,6 +70,7 @@ class TrackDetailView: UIView {
         monitorStartTime()
         playPauseButton.setImage(UIImage(named: "pause")!, for: .normal)
         miniPlayPauseButton.setImage(UIImage(named: "pause")!, for: .normal)
+        miniTrackImageView.layer.cornerRadius = 5
         observePlayerCurrentTime()
         
         let string600 = viewModel.iconUrlString?.replacingOccurrences(of: "100x100", with: "600x600")

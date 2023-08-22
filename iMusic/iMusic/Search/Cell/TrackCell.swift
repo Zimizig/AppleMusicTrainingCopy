@@ -40,10 +40,14 @@ class TrackCell: UITableViewCell {
         trackNameLabel.text = viewModel.trackName
         artistNameLabel.text = viewModel.artistName
         collectionNameLabel.text = viewModel.collectionName
+        trackImageView.layer.cornerRadius = 5
         
         guard let url = URL(string: viewModel.iconUrlString ?? "") else { return }
         
         trackImageView.sd_setImage(with: url, completed: nil)
     }
     
+    @IBAction func addTrackAction(_ sender: Any) {
+        print("Button taped")
+    }
 }
