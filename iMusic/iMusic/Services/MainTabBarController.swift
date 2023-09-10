@@ -28,7 +28,9 @@ class MainTabBarController: UITabBarController {
         
         searchViewController.tabBarDelegate = self
         
-        let libraryVC = Library()
+        var libraryVC = Library()
+        libraryVC.tabBarDelegate = self
+        
         let hostVC = UIHostingController(rootView: libraryVC)
         
         viewControllers = [

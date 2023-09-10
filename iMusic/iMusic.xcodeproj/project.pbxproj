@@ -14,6 +14,7 @@
 		2C497CC62A7EA2B1006CC29D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C497CC52A7EA2B1006CC29D /* SearchResponse.swift */; };
 		2C81BC5D2A8938DF004ED89A /* CMTime + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C81BC5C2A8938DF004ED89A /* CMTime + extension.swift */; };
 		2C81BC5F2A89DE6C004ED89A /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C81BC5E2A89DE6C004ED89A /* Nib.swift */; };
+		2C84AEA62A9D2C1C007B4941 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2C84AEA52A9D2C1C007B4941 /* URLImage */; };
 		2C997EFD2A8823050050D111 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C997EFC2A8823050050D111 /* FooterView.swift */; };
 		2C997F002A884E920050D111 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C997EFF2A884E920050D111 /* TrackDetailView.xib */; };
 		2C997F022A884EE40050D111 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C997F012A884EE40050D111 /* TrackDetailView.swift */; };
@@ -23,6 +24,7 @@
 		2CA735AE2A8142AE0027ABAE /* SearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA735A82A8142AE0027ABAE /* SearchModels.swift */; };
 		2CA735AF2A8142AE0027ABAE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA735A92A8142AE0027ABAE /* SearchViewController.swift */; };
 		2CA735B02A8142AE0027ABAE /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA735AA2A8142AE0027ABAE /* SearchInteractor.swift */; };
+		2CA9F2B92A94C7BB0014C084 /* UserDefaults .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9F2B82A94C7BB0014C084 /* UserDefaults .swift */; };
 		2CAB8FD32A7AA1C3000A4A5B /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB8FD22A7AA1C3000A4A5B /* SearchMusicViewController.swift */; };
 		2CCD95EF2A79E88E00333FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD95EE2A79E88E00333FE8 /* AppDelegate.swift */; };
 		2CCD95F12A79E88E00333FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD95F02A79E88E00333FE8 /* SceneDelegate.swift */; };
@@ -52,6 +54,7 @@
 		2CA735A82A8142AE0027ABAE /* SearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModels.swift; sourceTree = "<group>"; };
 		2CA735A92A8142AE0027ABAE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2CA735AA2A8142AE0027ABAE /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		2CA9F2B82A94C7BB0014C084 /* UserDefaults .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults .swift"; sourceTree = "<group>"; };
 		2CAB8FD22A7AA1C3000A4A5B /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
 		2CCD95EB2A79E88E00333FE8 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCD95EE2A79E88E00333FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C84AEA62A9D2C1C007B4941 /* URLImage in Frameworks */,
 				C309BDEA3983177641B939A8 /* Pods_iMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +89,7 @@
 			children = (
 				2C287DD22A83044C0064F70E /* TrackCell.xib */,
 				2C287DD42A83048E0064F70E /* TrackCell.swift */,
+				2CA9F2B82A94C7BB0014C084 /* UserDefaults .swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -222,6 +227,9 @@
 			dependencies = (
 			);
 			name = iMusic;
+			packageProductDependencies = (
+				2C84AEA52A9D2C1C007B4941 /* URLImage */,
+			);
 			productName = iMusic;
 			productReference = 2CCD95EB2A79E88E00333FE8 /* iMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +258,9 @@
 				Base,
 			);
 			mainGroup = 2CCD95E22A79E88E00333FE8;
+			packageReferences = (
+				2C84AEA42A9D2C1C007B4941 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 2CCD95EC2A79E88E00333FE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +348,7 @@
 				2CA735AD2A8142AE0027ABAE /* SearchRouter.swift in Sources */,
 				2CA735AE2A8142AE0027ABAE /* SearchModels.swift in Sources */,
 				2CCD95F12A79E88E00333FE8 /* SceneDelegate.swift in Sources */,
+				2CA9F2B92A94C7BB0014C084 /* UserDefaults .swift in Sources */,
 				2CA735AB2A8142AE0027ABAE /* SearchPresenter.swift in Sources */,
 				2C17727A2A8EFD48003F44AC /* Library.swift in Sources */,
 				2C997F022A884EE40050D111 /* TrackDetailView.swift in Sources */,
@@ -550,6 +562,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C84AEA42A9D2C1C007B4941 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C84AEA52A9D2C1C007B4941 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C84AEA42A9D2C1C007B4941 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CCD95E32A79E88E00333FE8 /* Project object */;
 }
