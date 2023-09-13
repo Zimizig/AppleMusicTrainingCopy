@@ -5,5 +5,5 @@
 Xcode, Swift UI, UIKit, SDWebImage, архитектура Clean Swift.
 
 <div align="center">
-  <img data-target="animated-image.replacedImage" alt="maid.gif?raw=true" class="AnimatedImagePlayer-animatedImage" src="https://github.com/Zimizig/AppleMusicTrainingCopy/blob/main/shortGif.gif" width="700" height="1300" style="display: block; opacity: 1;">
+  <img data-target="animated-image.replacedImage" alt="maid.gif?raw=true" class="AnimatedImagePlayer-animatedImage" src="https://github.com/Zimizig/AppleMusicTrainingCopy/blob/main/shortGif.gif" width="500" height="900" style="display: block; opacity: 1;">
 </div>
